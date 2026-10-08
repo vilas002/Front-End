@@ -1,14 +1,15 @@
-//import logo from './logo.svg';
 import './App.css';
 import Counter from './components/counter';
-//import Welcome from './components/welcome';
-// function App() {
-//   return (
-//     <Welcome name="Shiva Karthikeya" />
-//   );
-// }
 
 const App = () => {
-  return (<Counter />)
-}
+  return (
+    <div className='App'>
+      <Counter />
+      <a className='App-link' href='https://react.dev' target='_blank' rel='noreferrer'>
+        Learn React
+      </a>
+    </div>
+  );
+};
+
 export default App;
