@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
 </head>
 <body>
     <div id="root"></div>
-    <script type="text/javascript">
-        const rootEle = document.getElementById("root");
-        const h1Ele = document.createElement("h1");
-        h1Ele.textContent="Hello vilas";
-        h1Ele.classList.add("greeting");
-        rootEle.appendChild(h1Ele);
+    <!-- <script type="text/javascript">
+      //javaScript Code 
+      const rootEle = document.getElementById("root");
+      const h1Ele = document.createElement("h1");
+      h1Ele.textContent="Learning JavaScript";
+      h1Ele.classList.add("greeting");
+      rootEle.appendChild(h1Ele);
+</script> -->
+
+<!-- <script type="module">
+    const reactRootEle = document.getElementById("root");
+    const elementType = "h1";
+    const elementProps = {className : "greeting", children:"I am starting ReactJs"};
+    const h1Ele = React.createElement(elementType,elementProps);
+    ReactDOM.render(h1Ele,reactRootEle);
+</script> -->
+
+<script type="text/babel">
+    // JSX Element is Used Here
+  const element =<div className="container">
+     <h1 className="greeting">Hello World JSX Element here used</h1>
+     <button className="button">Lets Start Learning React</button>
+     </div>
+  ReactDOM.render(element, document.getElementById("root"));
 </script>
 </body>
 </html>

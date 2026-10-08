@@ -1,5 +1,18 @@
 .greeting{
-    color: rgb(21, 25, 24);
+    color: rgb(193, 229, 86);
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'labster';
+    text-decoration: underline;
+}
+.container{
+    text-align: center;
+}
+.button{
+    background-color: blueviolet;
+    color: #ffffff;
+    height: 46px;
+    font-size: 18px;
+    font-family: "monoton";
+    width: 166px;
+    border-radius: 12px;
 }
